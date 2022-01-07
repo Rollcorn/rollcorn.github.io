@@ -53,10 +53,10 @@ nav {
   color: #000000;
   transition: background-color 0.3s, color 0.3s;
 }
-.nnn {
+.refname {
   border-bottom: 2px solid rgb(0, 0, 0);
 }
-.nnn:hover {
+.refname:hover {
 }
 .topnav .icon {
   display: none;
@@ -85,9 +85,9 @@ footer nav a:hover {
   }
   .topnav a.icon {
     float: right;
-    margin-top: -17px;
+    margin-top: 9px;
     display: block;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   nav {
     width: 100%;
