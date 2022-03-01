@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Denis Shkandyuk</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200&display=swap"
+          rel="stylesheet"
+        />
+        <div>One more programmer</div>
+        <div class="name">denis shkandyuk</div>
+      </div>
+
+      <div>
+        <div class="topnav" id="myTopnav">
+          <a class="refline" href="../index.html">
+            <div class="refname">HOME</div>
+          </a>
+          <a class="refline" href="../index.html">
+            <div class="refname">ABOUT ME</div>
+          </a>
+          <a class="refline" href="../index.html">
+            <div class="refname">PROJECTS</div>
+          </a>
+          <a class="refline" href="../index.html">
+            <div class="refname">LEARNING</div>
+          </a>
+          <a class="refline" href="../index.html">
+            <div class="refname">CONTACT</div>
+          </a>
+
+          <a id="menu" href="#" class="icon">&#9776;</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="bak"></div>
+        <div>
+          <div>
+            <div class="title">
+              03 - [Udemy] Master Microservices with Spring Boot and Spring
+              Cloud.
+            </div>
+
+            <div class="elem">За это время было изучено:</div>
+
+            <div class="elem">
+              <a
+                class="refline"
+                href="https://docs.google.com/document/d/1NAv_pyjFjQFqvk4GZAcpWiKwTVh8Sdskj5vO4E8jdwA/edit?usp=sharing"
+              >
+                Конспект
+              </a>
+            </div>
+
+            <div class="elem">
+              1. Закончил практику с Microservices with Spring Cloud. Проект
+              выложенный в предыдущей главе был преобразован с внедрением JPA,
+              что упростило работу с данными и работу с СУБД.
+            </div>
+
+            <div class="elem">
+              Разработаны и внедренны два сервиса CurrencyExchange
+              CurrencyConversion
+            </div>
+
+            <div class="title">Feign</div>
+            <div class="elem">
+              Изучены основы использования плагина Feign. Feign связывает
+              сервисы и позволяет лекго вызвать из одного сервиса другой сервис.
+              Для работы необходимо связанные сервисы отметить следующей.
+              аннотацией
+            </div>
+            <div class="elem">
+              @FeignClient(name = "currency-exchange", url =
+              "localhost:8000")-интерфейс @EnableFeignClients
+            </div>
+
+            <div class="title">Eureka server и API gateway</div>
+            <div class="elem">
+              Изучены основы использования использования плагина Eureka. С
+              помощью него был разработан сервис naming-service. Говоря в общем
+              Eureka - приложение, которое реализует сетевой сервис для ответа
+              на запросы к директроиям сервисов. Используется это для
+              балансировки нагрузки и отработки отказа сервисов. В учебном
+              проекте для этого можно создать еще одну конфигурацию запуска
+              имеющегося сервиса, но на другом порту. При использовании Eureka
+              будет распределять примерно равномерно запросы между этими
+              сервисами.
+            </div>
+            <div class="elem">
+              Сервисы работающие с Eureka помечаются следующей аннотацией:
+            </div>
+            <div class="elem">@EnableEurekaServer</div>
+            <div class="elem">
+              В месте с эти был изучен такой инструмент как API Gateway. Который
+              позволяет вызвать любой микросервис зарегистрированный с Eureka.
+              Если необходимо реализовать аутентификацию, то её можно
+              реализовать в api gateway и предоставлять только те вещи которые
+              аутентифицированны в вашем микросервисе. Научился как можно прокси
+              API gateway к микросервисам использующим Eureka используя Spring
+              Cloud Gateway Discovery Locacor.
+            </div>
+
+            <div class="elem">
+              <a
+                class="refline"
+                href="https://github.com/Rollcorn/Udemy-Microservices-with-Spring/tree/main/microservice-2"
+                >Microservice 2 project repo</a
+              >
+            </div>
+
+            <div class="title">Docker Basics</div>
+            <div class="elem">
+              2. Изучил основы использования Docker. Изучил способы выгрузки
+              образов из репозитория, способы создания собственных образов, а
+              также
+            </div>
+            <div class="elem">Основные команды приложения docker:</div>
+            <div class="elem">
+              sudo docker run -p {HOSTPORT}:{CONTAINERPORT} -d
+              in28min/todo-rest-api-h2:1.0.0.RELEASE
+            </div>
+            <div class="elem">
+              -d - ditached mode запускает контейнер в фоновом режиме
+            </div>
+            <div class="elem">
+              Получить лог контейнер: sudo docker logs -f {IMAGE_ID}
+            </div>
+            <div class="elem">
+              Получить информацию по запущенным контейнерам:sudo docker
+              container ls
+            </div>
+            <div class="elem">
+              Получить информацию по запущенным контейнерам:sudo docker
+              container ls Можно запустить несколько версий одного приложения в
+              одном контейнере (на другом порту)
+            </div>
+            <div class="elem">
+              Просмотреть все образы в контейнере: sudo docker images
+            </div>
+            <div class="elem">
+              Чтобы остановить запущенное приложение: sudo docker container stop
+              {id-контейнера} Чтобы просмотреть все контейнеры что были созданы
+              в том числе которые были закрыты: sudo docker container ls -a
+              Docker Daemon - ответственен за сопоставление наших локальных
+              файлов а также за загрузку необходимых файлов из репозитория
+              образов, если они отсутствуют на локальной машине.
+            </div>
+            <div class="elem">
+              docker search mysql sudo docker image history {IMAGE ID}
+            </div>
+            <div class="elem">
+              sudo docker image inspect {IMAGE ID/or its part} - получить
+              метаданные о самом контейнере в момент создания, текущий статус,
+              платформа, детали образа, связные порты,
+            </div>
+            <div class="elem">sudo docker logs -f {IMAGE ID/or its part}</div>
+            <div class="elem">
+              docker conteiner prune - удаляет все остановленные контейнеры
+            </div>
+            <div class="elem">
+              stop -> SUGTERM -> graceful shutdown (изящное завершение работы)
+              docker container stop {IMAGE ID/or its part}
+            </div>
+            <div class="elem">
+              kill -> SIGKILL -> немедленно завершает процесс docker container
+              kill {IMAGE ID/or its part}
+            </div>
+            <div class="elem">
+              docker container run -p 5000:5000 -d --restart=always
+              in28min/todo-rest-api-h2:1.0.0.RELEASE Запускает контейнер каждый
+              раз при перезапуске докера, чтобы этого изюежать небходимо
+              воспользоваться функцией prune
+            </div>
+            <div class="elem">
+              docker events - отображает все происходящие в докере события sudo
+              docker top {IMAGE ID/or its part} sudo docker stats
+            </div>
+            <div class="elem">
+              sudo docker container run -p 5000:5000 -m 512m --cpu-quota {ЧИСЛО}
+              -d in28min/todo-rest-api-h2:1.0.0.RELEASE ЧИСЛО - 100000 = 100%
+              5000 = 5%
+            </div>
+            <div class="elem">docker system df - докер deamon</div>
+            <div class="title">Distributed tracing</div>
+            <div class="elem">
+              С подробной информацие об утилите можно ознакомиться
+              <a
+                href=" https://hub.docker.com/r/openzipkin/zipkin/"
+                class="refline"
+                >здесь</a
+              >
+            </div>
+            <div class="elem">Основые тезисы</div>
+            <div class="elem">
+              sleuth - один из фреймворков который приравнивает уникальный id
+              каждому запросу(request) и когда запрос проходит через множество
+              микросервисов id поддерживается а информация отправ
+            </div>
+            <div class="elem">
+              Для построения такого микросервиса внедряно 3 зависимости
+              spring-cloud-sleuth-zipkin, spring-cloud-starter-sleuth,
+              spring-rabbit. spring.sleuth.sampler.probability=1.0 - trace
+              каждый запрос
+            </div>
+            <div class="elem">
+              Docker compose - упрощает запуск множества микросервисов.
+            </div>
+            <div class="elem">
+              По умолчанию микрсервис подхватывет tracing server и шлет лог
+              принимая стандартную конфигурацию:
+              spring.zipkin.baseURL=http:/localhost:9411/ Если же Zipkin
+              запускается на другом URL, то необходимо выполнить изменение этой
+              конфигурации.
+            </div>
+            <div class="elem">
+              <image>
+                <name
+                  >in28min/mmv2-${project.artifactId}:${project.version}</name
+                >
+              </image>
+            </div>
+            <div class="elem">
+              <pullPolicy>IF_NOT_PRESENT</pullPolicy> - выполнит pull образа
+              если он не существует локально (По умолчанию создает всегда -
+              always)
+            </div>
+            <div class="elem">
+              sudo docker-compose up EUREKA.CLIENT.SERVICEURL.DEFAULTZONE:
+              http://naming-server:8761/eureka
+            </div>
+
+            <div class="elem">
+              Проект с внедернными средствами docker:
+              <a
+                class="refline"
+                href="https://github.com/Rollcorn/Udemy-Microservices-with-Spring/tree/main/docker"
+              >
+                Docker exercises repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bak"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <a href="index.html">HOME</a>
+        <a href="blog.html">BLOG</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+      <div class="footcontacts">
+        <a href="about.html">telegram</a>
+        <a href="about.html">vk</a>
+        <a href="about.html">email</a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
